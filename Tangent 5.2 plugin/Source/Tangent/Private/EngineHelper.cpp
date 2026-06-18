@@ -378,11 +378,12 @@ void UEngineHelper::UpdateSelectionCaches(AActor* newSelection)
 
 	// we choose to keep track of the last selected instance of some actor types, check for each in turn, they are
 	// stored as uprops so the local pointer will be nulled by UE if the instance is deleted in the meantime
-	if (ACameraActor* camera = Cast<ACameraActor>(newSelection))
-	{
-		// camera
-		_lastSelectedCamera = camera;
-	}
+	//////////////////////////////////////////////////////////////
+	//if (ACameraActor* camera = Cast<ACameraActor>(newSelection))
+	//{
+	//	// camera
+	//	_lastSelectedCamera = camera;
+	//}
 }
 
 // called when the selection of the unreal editor changes, the obj is an instance of the uselection class
@@ -3259,23 +3260,25 @@ void UEngineHelper::ApplyMoveSelected(const FVector& value, TransformReference t
 			}
 			else if (transformRef == TransformReference::Camera)
 			{
+				
+				//////////////////////////////////////////////////////////////
 				// apply the delta values as offsets relative to the last selected camera if available
-				if (_lastSelectedCamera)
-				{
-					// we need the directional vectors of the camera's orientation to drive movement relative to it
-					FVector cameraFV = _lastSelectedCamera->GetActorForwardVector(),
-							cameraRV = _lastSelectedCamera->GetActorRightVector(),
-							cameraUV = _lastSelectedCamera->GetActorUpVector();
+				//if (_lastSelectedCamera)
+				//{
+				//	// we need the directional vectors of the camera's orientation to drive movement relative to it
+				//	FVector cameraFV = _lastSelectedCamera->GetActorForwardVector(),
+				//			cameraRV = _lastSelectedCamera->GetActorRightVector(),
+				//			cameraUV = _lastSelectedCamera->GetActorUpVector();
 
-					// for ue: x is forward, y is right and z is up, so multiply the unit vectors of the appropriate directions by the associated delta values
-					cameraFV *= value.X;
-					cameraRV *= value.Y;
-					cameraUV *= value.Z;
+				//	// for ue: x is forward, y is right and z is up, so multiply the unit vectors of the appropriate directions by the associated delta values
+				//	cameraFV *= value.X;
+				//	cameraRV *= value.Y;
+				//	cameraUV *= value.Z;
 
-					// sum the individual movements and apply to the selected actor as a world move
-					FVector result = cameraFV + cameraRV + cameraUV;
-					_selectedActor->AddActorWorldOffset(result);
-				}
+				//	// sum the individual movements and apply to the selected actor as a world move
+				//	FVector result = cameraFV + cameraRV + cameraUV;
+				//	_selectedActor->AddActorWorldOffset(result);
+				//}
 			}
 			else if (transformRef == TransformReference::Viewport)
 			{
@@ -3528,26 +3531,27 @@ void UEngineHelper::ApplyRotateSelected(const FRotator& value, TransformReferenc
 			}
 			else if (transformRef == TransformReference::Camera)
 			{
-				// apply the delta values as offsets relative to the last selected camera if available
-				if (_lastSelectedCamera)
-				{
-					// we need the directional vectors of the camera's orientation to drive rotation relative to it
-					FVector cameraFV = _lastSelectedCamera->GetActorForwardVector(),
-							cameraRV = _lastSelectedCamera->GetActorRightVector(),
-							cameraUV = _lastSelectedCamera->GetActorUpVector();					
+				//////////////////////////////////////////////////////////////
+				//// apply the delta values as offsets relative to the last selected camera if available
+				//if (_lastSelectedCamera)
+				//{
+				//	// we need the directional vectors of the camera's orientation to drive rotation relative to it
+				//	FVector cameraFV = _lastSelectedCamera->GetActorForwardVector(),
+				//			cameraRV = _lastSelectedCamera->GetActorRightVector(),
+				//			cameraUV = _lastSelectedCamera->GetActorUpVector();					
 
-					// as we are using the camera directional vectors to create the quats we don't need to safeguard the vectors by making calls
-					// to GetSafeNormal() on them first, note that the x and y rotations are inverted to make the operation visually correct
-					// for ue: x is forward, y is right, z is up and x is roll, y is pitch, z is yaw
-					FQuat xQuat = FQuat(cameraFV, FMath::DegreesToRadians(-value.Roll));
-					FQuat yQuat = FQuat(cameraRV, FMath::DegreesToRadians(-value.Pitch));
-					FQuat zQuat = FQuat(cameraUV, FMath::DegreesToRadians(value.Yaw));
+				//	// as we are using the camera directional vectors to create the quats we don't need to safeguard the vectors by making calls
+				//	// to GetSafeNormal() on them first, note that the x and y rotations are inverted to make the operation visually correct
+				//	// for ue: x is forward, y is right, z is up and x is roll, y is pitch, z is yaw
+				//	FQuat xQuat = FQuat(cameraFV, FMath::DegreesToRadians(-value.Roll));
+				//	FQuat yQuat = FQuat(cameraRV, FMath::DegreesToRadians(-value.Pitch));
+				//	FQuat zQuat = FQuat(cameraUV, FMath::DegreesToRadians(value.Yaw));
 
-					// apply the results to the selected actor directly from the quats, no need to convert to rotators
-					_selectedActor->AddActorWorldRotation(xQuat);
-					_selectedActor->AddActorWorldRotation(yQuat);
-					_selectedActor->AddActorWorldRotation(zQuat);
-				}
+				//	// apply the results to the selected actor directly from the quats, no need to convert to rotators
+				//	_selectedActor->AddActorWorldRotation(xQuat);
+				//	_selectedActor->AddActorWorldRotation(yQuat);
+				//	_selectedActor->AddActorWorldRotation(zQuat);
+				//}
 			}
 			else if (transformRef == TransformReference::Viewport)
 			{
@@ -3803,30 +3807,31 @@ void UEngineHelper::ApplyScaleSelected(const FVector& value,  TransformReference
 			}
 			else if (transformRef == TransformReference::Camera)
 			{
+				//////////////////////////////////////////////////////////////
 				// apply the delta values as offsets relative to the last selected camera if available
-				if (_lastSelectedCamera)
-				{
-					// we need the directional vectors of the camera's orientation to drive scaling relative to it
-					FVector cameraFV = _lastSelectedCamera->GetActorForwardVector(),
-							cameraRV = _lastSelectedCamera->GetActorRightVector(),
-							cameraUV = _lastSelectedCamera->GetActorUpVector();
+				//if (_lastSelectedCamera)
+				//{
+				//	// we need the directional vectors of the camera's orientation to drive scaling relative to it
+				//	FVector cameraFV = _lastSelectedCamera->GetActorForwardVector(),
+				//			cameraRV = _lastSelectedCamera->GetActorRightVector(),
+				//			cameraUV = _lastSelectedCamera->GetActorUpVector();
 
-					// we want to apply the delta value component-wise as a world scale to the current scale vector of the object
-					// so we have to allow for the directional vectors effectively reversing the delta directions by taking the 
-					// absolute adjustments and scaling those for each component, it's a bit odd but it seems to work ok
-					cameraFV = cameraFV.GetAbs() * value.X;
-					cameraRV = cameraRV.GetAbs() * value.Y;
-					cameraUV = cameraUV.GetAbs() * value.Z;
+				//	// we want to apply the delta value component-wise as a world scale to the current scale vector of the object
+				//	// so we have to allow for the directional vectors effectively reversing the delta directions by taking the 
+				//	// absolute adjustments and scaling those for each component, it's a bit odd but it seems to work ok
+				//	cameraFV = cameraFV.GetAbs() * value.X;
+				//	cameraRV = cameraRV.GetAbs() * value.Y;
+				//	cameraUV = cameraUV.GetAbs() * value.Z;
 
-					// combine all the component values
-					FVector sum = cameraFV + cameraRV + cameraUV;
+				//	// combine all the component values
+				//	FVector sum = cameraFV + cameraRV + cameraUV;
 
-					// modify the current selected object scale by the trim of the deltas
-					FVector newScale = _selectedActor->GetActorScale3D() * (sum + 1);
+				//	// modify the current selected object scale by the trim of the deltas
+				//	FVector newScale = _selectedActor->GetActorScale3D() * (sum + 1);
 
-					// finally apply the new scale in world space
-					_selectedActor->SetActorScale3D(newScale);
-				}
+				//	// finally apply the new scale in world space
+				//	_selectedActor->SetActorScale3D(newScale);
+				//}
 			}
 			else if (transformRef == TransformReference::Viewport)
 			{

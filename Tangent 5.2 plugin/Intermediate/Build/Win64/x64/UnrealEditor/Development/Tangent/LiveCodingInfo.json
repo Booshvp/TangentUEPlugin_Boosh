@@ -1,0 +1,18 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Tangent.cpp.obj": [
+			"EngineHelper.gen.cpp.obj",
+			"Tangent.init.gen.cpp.obj",
+			"ClassToModeMap.cpp.obj",
+			"EngineHelper.cpp.obj",
+			"HSVColorCache.cpp.obj",
+			"MessageBuilder.cpp.obj",
+			"PropertyData.cpp.obj",
+			"ResetCache.cpp.obj",
+			"RxContext.cpp.obj",
+			"Tangent.cpp.obj",
+			"TangentEngine.cpp.obj"
+		]
+	}
+}
