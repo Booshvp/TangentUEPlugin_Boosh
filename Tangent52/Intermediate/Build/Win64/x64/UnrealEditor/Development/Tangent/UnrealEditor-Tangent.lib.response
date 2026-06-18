@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Tangent.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\james\Documents\Unreal Projects\TangentDesk52\Intermediate\Build\Win64\x64\TangentDesk52Editor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"C:\Users\james\Documents\Unreal Projects\TangentDesk52\Plugins\Tangent\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tangent\Module.Tangent.cpp.obj"
+"C:\Users\james\Documents\Unreal Projects\TangentDesk52\Plugins\Tangent\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tangent\Default.rc2.res"
+/OUT:"C:\Users\james\Documents\Unreal Projects\TangentDesk52\Plugins\Tangent\Intermediate\Build\Win64\x64\UnrealEditor\Development\Tangent\UnrealEditor-Tangent.lib"
