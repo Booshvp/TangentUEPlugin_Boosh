@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\classtomodemap.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\james\\documents\\unreal projects\\tangent1\\intermediate\\build\\win64\\x64\\tangent1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tangent\\definitions.tangent.h",
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\classtomodemap.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

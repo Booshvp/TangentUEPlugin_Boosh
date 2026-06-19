@@ -1,0 +1,21 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Tangent.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Intermediate/Build/Win64/x64/Tangent1Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/Module.Tangent.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/ClassToModeMap.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/EngineHelper.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/HSVColorCache.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/MessageBuilder.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/PropertyData.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/ResetCache.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/RxContext.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/Tangent.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/TangentEngine.cpp.obj"
+"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/Default.rc2.res"
+/OUT:"C:/Users/james/Documents/Unreal Projects/Tangent1/Plugins/Tangent/Intermediate/Build/Win64/x64/UnrealEditor/Development/Tangent/UnrealEditor-Tangent.lib"

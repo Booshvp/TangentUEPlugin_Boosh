@@ -1,0 +1,16 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\hsvcolorcache.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\james\\documents\\unreal projects\\tangent1\\intermediate\\build\\win64\\x64\\tangent1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tangent\\definitions.tangent.h",
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\hsvcolorcache.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\engine\\light.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\light.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

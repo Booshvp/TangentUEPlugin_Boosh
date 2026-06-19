@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.TangentInput.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"TangentInput.cpp.obj"
+		]
+	}
+}

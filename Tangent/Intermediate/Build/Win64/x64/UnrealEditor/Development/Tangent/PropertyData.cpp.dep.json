@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\propertydata.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\james\\documents\\unreal projects\\tangent1\\intermediate\\build\\win64\\x64\\tangent1editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tangent\\definitions.tangent.h",
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\propertydata.h",
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\propertychangehelper.h",
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\resetcache.h",
+            "c:\\users\\james\\documents\\unreal projects\\tangent1\\plugins\\tangent\\source\\tangent\\private\\controls.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
