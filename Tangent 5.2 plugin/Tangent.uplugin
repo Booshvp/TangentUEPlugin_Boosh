@@ -1,0 +1,42 @@
+{
+	"FileVersion": 3,
+	"Version": 17,
+	"VersionName": "1.1.5",
+	"FriendlyName": "Tangent Panels",
+	"Description": "Integrates the complete range of Tangent control surface panels with the Unreal Editor including fully user-customisable layouts.",
+	"Category": "Control Surface",
+	"CreatedBy": "Tangent Wave Ltd.",
+	"CreatedByURL": "https://www.tangentwave.co.uk/",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher: //ue/marketplace/product/7469fd28e32f4055ab55aae6ff8bddca",
+	"SupportURL": "",
+	"EngineVersion": "5.2.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "Tangent",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac"
+			]
+		},
+		{
+			"Name": "TangentInput",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ColorCorrectRegions",
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TangentWave fileType="PanelMap" fileVersion="3.0">
+    <Panels>
+        <Panel type="Element-Mf">
+            <Mode id="0x00010001"> <!-- Editor -->
+                <ControlBank id="Standard">
+                    <Bank>
+                        <Control type="Button" number="12"> <!-- Element-Mf Button A -->
+                            <Mapping mode="Std">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="13"> <!-- Element-Mf Play Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002002F</Key> <!-- Sequencer Play Reverse -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020013</Key> <!-- Sequencer Shuttle Backward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="14"> <!-- Element-Mf Stop -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="15"> <!-- Element-Mf Play Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000C</Key> <!-- Sequencer Play Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020012</Key> <!-- Sequencer Shuttle Forward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="16"> <!-- Element-Mf Inch Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000F</Key> <!-- Sequencer Step Backward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020010</Key> <!-- Sequencer Jump To Start -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="17"> <!-- Element-Mf Inch Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000E</Key> <!-- Sequencer Step Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020011</Key> <!-- Sequencer Jump To End -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Button">
+                    <Bank>
+                        <Control type="Button" number="0"> <!-- Element-Mf Button 1 -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000A</Key> <!-- Stop Play/Simulate -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="1"> <!-- Element-Mf Button 2 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020007</Key> <!-- Play In Editor (PIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="2"> <!-- Element-Mf Button 3 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020008</Key> <!-- Simulate In Editor (SIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="3"> <!-- Element-Mf Button 4 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010004</Argument> <!-- Post Process -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="4"> <!-- Element-Mf Button 5 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010006</Argument> <!-- Color Correct -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="5"> <!-- Element-Mf Button 6 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010005</Argument> <!-- Sequencer -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="6"> <!-- Element-Mf Button 7 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010001</Argument> <!-- Editor -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="7"> <!-- Element-Mf Button 8 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010002</Argument> <!-- Light -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="8"> <!-- Element-Mf Button 9 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010003</Argument> <!-- Camera -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Trackerball">
+                    <Bank>
+                        <Control type="Encoder" number="2"> <!-- Element-Mf Ring -->
+                            <Mapping mode="Std">
+                                <Key>0x81000001</Key> <!-- Transport (Jog/Shuttle) -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00030016</Key> <!-- Sequencer Zoom -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+            </Mode>
+            <Mode id="0x00010004"> <!-- Post Process -->
+                <ControlBank id="Standard">
+                    <Bank>
+                        <Control type="Button" number="12"> <!-- Element-Mf Button A -->
+                            <Mapping mode="Std">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="13"> <!-- Element-Mf Play Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002002F</Key> <!-- Sequencer Play Reverse -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020013</Key> <!-- Sequencer Shuttle Backward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="14"> <!-- Element-Mf Stop -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="15"> <!-- Element-Mf Play Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000C</Key> <!-- Sequencer Play Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020012</Key> <!-- Sequencer Shuttle Forward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="16"> <!-- Element-Mf Inch Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000F</Key> <!-- Sequencer Step Backward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020010</Key> <!-- Sequencer Jump To Start -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="17"> <!-- Element-Mf Inch Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000E</Key> <!-- Sequencer Step Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020011</Key> <!-- Sequencer Jump To End -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Button">
+                    <Bank>
+                        <Control type="Button" number="0"> <!-- Element-Mf Button 1 -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000A</Key> <!-- Stop Play/Simulate -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="1"> <!-- Element-Mf Button 2 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020007</Key> <!-- Play In Editor (PIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="2"> <!-- Element-Mf Button 3 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020008</Key> <!-- Simulate In Editor (SIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="3"> <!-- Element-Mf Button 4 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010004</Argument> <!-- Post Process -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="4"> <!-- Element-Mf Button 5 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010006</Argument> <!-- Color Correct -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="5"> <!-- Element-Mf Button 6 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010005</Argument> <!-- Sequencer -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="6"> <!-- Element-Mf Button 7 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010001</Argument> <!-- Editor -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="7"> <!-- Element-Mf Button 8 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010002</Argument> <!-- Light -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="8"> <!-- Element-Mf Button 9 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010003</Argument> <!-- Camera -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Trackerball">
+                    <Bank>
+                        <Control type="Encoder" number="2"> <!-- Element-Mf Ring -->
+                            <Mapping mode="Std">
+                                <Key>0x81000001</Key> <!-- Transport (Jog/Shuttle) -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00030016</Key> <!-- Sequencer Zoom -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+            </Mode>
+            <Mode id="0x00010003"> <!-- Camera -->
+                <ControlBank id="Standard">
+                    <Bank>
+                        <Control type="Button" number="12"> <!-- Element-Mf Button A -->
+                            <Mapping mode="Std">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="13"> <!-- Element-Mf Play Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002002F</Key> <!-- Sequencer Play Reverse -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020013</Key> <!-- Sequencer Shuttle Backward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="14"> <!-- Element-Mf Stop -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="15"> <!-- Element-Mf Play Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000C</Key> <!-- Sequencer Play Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020012</Key> <!-- Sequencer Shuttle Forward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="16"> <!-- Element-Mf Inch Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000F</Key> <!-- Sequencer Step Backward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020010</Key> <!-- Sequencer Jump To Start -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="17"> <!-- Element-Mf Inch Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000E</Key> <!-- Sequencer Step Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020011</Key> <!-- Sequencer Jump To End -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Button">
+                    <Bank>
+                        <Control type="Button" number="0"> <!-- Element-Mf Button 1 -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000A</Key> <!-- Stop Play/Simulate -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="1"> <!-- Element-Mf Button 2 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020007</Key> <!-- Play In Editor (PIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="2"> <!-- Element-Mf Button 3 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020008</Key> <!-- Simulate In Editor (SIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="3"> <!-- Element-Mf Button 4 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010004</Argument> <!-- Post Process -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="4"> <!-- Element-Mf Button 5 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010006</Argument> <!-- Color Correct -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="5"> <!-- Element-Mf Button 6 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010005</Argument> <!-- Sequencer -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="6"> <!-- Element-Mf Button 7 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010001</Argument> <!-- Editor -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="7"> <!-- Element-Mf Button 8 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010002</Argument> <!-- Light -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="8"> <!-- Element-Mf Button 9 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010003</Argument> <!-- Camera -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Trackerball">
+                    <Bank>
+                        <Control type="Encoder" number="2"> <!-- Element-Mf Ring -->
+                            <Mapping mode="Std">
+                                <Key>0x81000001</Key> <!-- Transport (Jog/Shuttle) -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00030016</Key> <!-- Sequencer Zoom -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+            </Mode>
+            <Mode id="0x00010002"> <!-- Light -->
+                <ControlBank id="Standard">
+                    <Bank>
+                        <Control type="Button" number="12"> <!-- Element-Mf Button A -->
+                            <Mapping mode="Std">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="13"> <!-- Element-Mf Play Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002002F</Key> <!-- Sequencer Play Reverse -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020013</Key> <!-- Sequencer Shuttle Backward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="14"> <!-- Element-Mf Stop -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="15"> <!-- Element-Mf Play Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000C</Key> <!-- Sequencer Play Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020012</Key> <!-- Sequencer Shuttle Forward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="16"> <!-- Element-Mf Inch Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000F</Key> <!-- Sequencer Step Backward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020010</Key> <!-- Sequencer Jump To Start -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="17"> <!-- Element-Mf Inch Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000E</Key> <!-- Sequencer Step Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020011</Key> <!-- Sequencer Jump To End -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Button">
+                    <Bank>
+                        <Control type="Button" number="0"> <!-- Element-Mf Button 1 -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000A</Key> <!-- Stop Play/Simulate -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="1"> <!-- Element-Mf Button 2 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020007</Key> <!-- Play In Editor (PIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="2"> <!-- Element-Mf Button 3 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020008</Key> <!-- Simulate In Editor (SIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="3"> <!-- Element-Mf Button 4 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010004</Argument> <!-- Post Process -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="4"> <!-- Element-Mf Button 5 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010006</Argument> <!-- Color Correct -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="5"> <!-- Element-Mf Button 6 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010005</Argument> <!-- Sequencer -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="6"> <!-- Element-Mf Button 7 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010001</Argument> <!-- Editor -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="7"> <!-- Element-Mf Button 8 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010002</Argument> <!-- Light -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="8"> <!-- Element-Mf Button 9 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010003</Argument> <!-- Camera -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Trackerball">
+                    <Bank>
+                        <Control type="Encoder" number="2"> <!-- Element-Mf Ring -->
+                            <Mapping mode="Std">
+                                <Key>0x81000001</Key> <!-- Transport (Jog/Shuttle) -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00030016</Key> <!-- Sequencer Zoom -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+            </Mode>
+            <Mode id="0x00010005"> <!-- Sequencer -->
+                <ControlBank id="Standard">
+                    <Bank>
+                        <Control type="Button" number="12"> <!-- Element-Mf Button A -->
+                            <Mapping mode="Std">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="13"> <!-- Element-Mf Play Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002002F</Key> <!-- Sequencer Play Reverse -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020013</Key> <!-- Sequencer Shuttle Backward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="14"> <!-- Element-Mf Stop -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="15"> <!-- Element-Mf Play Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000C</Key> <!-- Sequencer Play Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020012</Key> <!-- Sequencer Shuttle Forward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="16"> <!-- Element-Mf Inch Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000F</Key> <!-- Sequencer Step Backward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020010</Key> <!-- Sequencer Jump To Start -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="17"> <!-- Element-Mf Inch Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000E</Key> <!-- Sequencer Step Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020011</Key> <!-- Sequencer Jump To End -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Button">
+                    <Bank>
+                        <Control type="Button" number="0"> <!-- Element-Mf Button 1 -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000A</Key> <!-- Stop Play/Simulate -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="1"> <!-- Element-Mf Button 2 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020007</Key> <!-- Play In Editor (PIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="2"> <!-- Element-Mf Button 3 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020008</Key> <!-- Simulate In Editor (SIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="3"> <!-- Element-Mf Button 4 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010004</Argument> <!-- Post Process -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="4"> <!-- Element-Mf Button 5 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010006</Argument> <!-- Color Correct -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="5"> <!-- Element-Mf Button 6 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010005</Argument> <!-- Sequencer -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="6"> <!-- Element-Mf Button 7 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010001</Argument> <!-- Editor -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="7"> <!-- Element-Mf Button 8 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010002</Argument> <!-- Light -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="8"> <!-- Element-Mf Button 9 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010003</Argument> <!-- Camera -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Trackerball">
+                    <Bank>
+                        <Control type="Encoder" number="2"> <!-- Element-Mf Ring -->
+                            <Mapping mode="Std">
+                                <Key>0x81000001</Key> <!-- Transport (Jog/Shuttle) -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00030016</Key> <!-- Sequencer Zoom -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+            </Mode>
+            <Mode id="0x00010006"> <!-- Color Correct -->
+                <ControlBank id="Standard">
+                    <Bank>
+                        <Control type="Button" number="12"> <!-- Element-Mf Button A -->
+                            <Mapping mode="Std">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x80000001</Key> <!-- Select ALTernative Function -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="13"> <!-- Element-Mf Play Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002002F</Key> <!-- Sequencer Play Reverse -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020013</Key> <!-- Sequencer Shuttle Backward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="14"> <!-- Element-Mf Stop -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x0002000D</Key> <!-- Sequencer Stop -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="15"> <!-- Element-Mf Play Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000C</Key> <!-- Sequencer Play Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020012</Key> <!-- Sequencer Shuttle Forward -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="16"> <!-- Element-Mf Inch Reverse -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000F</Key> <!-- Sequencer Step Backward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020010</Key> <!-- Sequencer Jump To Start -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="17"> <!-- Element-Mf Inch Forward -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000E</Key> <!-- Sequencer Step Forward -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00020011</Key> <!-- Sequencer Jump To End -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Button">
+                    <Bank>
+                        <Control type="Button" number="0"> <!-- Element-Mf Button 1 -->
+                            <Mapping mode="Std">
+                                <Key>0x0002000A</Key> <!-- Stop Play/Simulate -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="1"> <!-- Element-Mf Button 2 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020007</Key> <!-- Play In Editor (PIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="2"> <!-- Element-Mf Button 3 -->
+                            <Mapping mode="Std">
+                                <Key>0x00020008</Key> <!-- Simulate In Editor (SIE) -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="3"> <!-- Element-Mf Button 4 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010004</Argument> <!-- Post Process -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="4"> <!-- Element-Mf Button 5 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010006</Argument> <!-- Color Correct -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="5"> <!-- Element-Mf Button 6 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010005</Argument> <!-- Sequencer -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="6"> <!-- Element-Mf Button 7 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010001</Argument> <!-- Editor -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="7"> <!-- Element-Mf Button 8 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010002</Argument> <!-- Light -->
+                            </Mapping>
+                        </Control>
+                        <Control type="Button" number="8"> <!-- Element-Mf Button 9 -->
+                            <Mapping mode="Std">
+                                <Key>0x8000000B</Key> <!-- Goto Mode -->
+                                <Argument>0x00010003</Argument> <!-- Camera -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+                <ControlBank id="Trackerball">
+                    <Bank>
+                        <Control type="Encoder" number="2"> <!-- Element-Mf Ring -->
+                            <Mapping mode="Std">
+                                <Key>0x81000001</Key> <!-- Transport (Jog/Shuttle) -->
+                            </Mapping>
+                            <Mapping mode="Alt">
+                                <Key>0x00030016</Key> <!-- Sequencer Zoom -->
+                            </Mapping>
+                        </Control>
+                    </Bank>
+                </ControlBank>
+            </Mode>
+        </Panel>
+    </Panels>
+</TangentWave>

@@ -1,8 +1,0 @@
-{
-	"BuildId": "47537391",
-	"Modules": 
-	{
-		"Tangent": "UnrealEditor-Tangent.dll",
-		"TangentInput": "UnrealEditor-TangentInput.dll"
-	}
-}
